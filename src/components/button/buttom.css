@@ -1,0 +1,22 @@
+.buttonHeader{
+    background: #F1F1F1, 100%;
+    border-radius: 21.5px;
+    width: 113px;
+    height: 43px;
+    border: 0;
+    color:black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 25px;
+    margin-left: 50px;
+
+    
+}
+.buttonHeader:focus{
+    background-color:#14142B;
+    color:white;
+    
+}

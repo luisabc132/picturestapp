@@ -1,0 +1,17 @@
+.userMenuContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    margin-right: 24.33px;
+}
+.imgProfile{
+    width: 52px;
+    height: 52px;
+    margin-right: 12px;
+}
+.userCardContainer{
+    text-align: center;
+    margin-top: 144px;
+    
+}

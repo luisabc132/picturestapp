@@ -1,0 +1,24 @@
+.headerText{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #14142B;
+    
+   
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 25px;
+    margin-left: 20px;
+    
+    
+}
+.imgLogo{
+    width: 48px;
+    height: 48px;  
+    margin-right: 12px;
+}
