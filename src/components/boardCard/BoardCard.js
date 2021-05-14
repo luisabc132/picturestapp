@@ -1,9 +1,9 @@
 import './boardCard.css'
-const BoardCard= ({title,many}) => {
+const BoardCard= ({board}) => {
     return(
         <div className = "cardContainer">
-            <p className = "titleBoard">{title}</p>
-            <p className = "numberPins">{many} Pins</p>
+            <p className = "titleBoard">{board.name}</p>
+            <p className = "numberPins">{board.numberOfpins} Pins</p>
             <img className = "imgEdit" src = "https://riasdegalicia.com/wp-content/uploads/2021/05/Captura-de-pantalla-2021-05-11-a-las-23.41.50.png" />
             
         </div>

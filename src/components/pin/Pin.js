@@ -1,12 +1,12 @@
 import './pin.css';
-function Pin({url,titlePin}){
+function Pin({pin}){
     return(
         <div className="pinContainer">
-            <img className="imagePin" src={url}/>
+            <img className="imagePin" src={pin.imgUrl}/>
 
            
             <div className="titlePinContainer"> 
-            <p className="titleText">{titlePin}</p>
+            <p className="titleText">{pin.name}</p>
 
             </div>
         </div>

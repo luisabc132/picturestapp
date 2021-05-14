@@ -197,6 +197,87 @@ function App() {
       "following": []
     }
   ]
+
+  const boards = [
+    { "name": "All pins", 
+      "imgUrl": "" , 
+      "urlLink": "", 
+      "numberOfpins": 512
+    },
+    { 
+      "name": "Board 2",
+      "imgUrl": "" , 
+      "urlLink": "", 
+      "numberOfpins": 22
+    },
+    { 
+      "name": "Board of plants", 
+      "imgUrl": "" , 
+      "urlLink": "", 
+      "numberOfpins": 12
+    },
+    { 
+      "name": "Board of foods", 
+      "imgUrl": "" , 
+      "urlLink": "", 
+      "numberOfpins": 51
+    },
+    { 
+      "name": "Amazing Board", 
+      "imgUrl": "" , 
+      "urlLink": "", 
+      "numberOfpins": 0
+    },
+    { 
+      "name": "Quick savel", 
+      "imgUrl": "" , 
+      "urlLink": "", 
+      "numberOfpins": 1
+    }
+  ];
+  const pins = [
+    {
+    "name": "Receta familiar" ,
+    "user": "" , 
+    "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-2.png", 
+    "numberOfLikes": 512,
+    "description": "",
+    "urlLink": ""
+    },
+    {
+    "name": "Puerta inglesa" ,
+    "user": "" , 
+    "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-3.png", 
+    "numberOfLikes": 512,
+    "description": "",
+    "urlLink": ""
+    },
+    {
+    "name": "" ,
+    "user": "" , 
+    "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-4.png", 
+    "numberOfLikes": 512,
+    "description": "",
+    "urlLink": ""
+    },
+    {
+    "name": "Azul" ,
+    "user": "" , 
+    "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-5.png", 
+    "numberOfLikes": 512,
+    "description": "",
+    "urlLink": ""
+    },
+    {
+    "name": "" ,
+    "user": "" , 
+    "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-6.png", 
+    "numberOfLikes": 512,
+    "description": "",
+    "urlLink": ""
+    }
+    
+  ];
   const user=users[0];
   console.log(user.following.length)
   return (
@@ -204,8 +285,8 @@ function App() {
       <Header />
       <DropDown />
       <UserCard name = {user.firstName + user.lastName}  userName = {user.username} folow = {user.following.length} />
-      <BoardList />
-      <PinsList />
+      <BoardList boards={boards}/>
+      <PinsList pins = {pins}/>
       
     </div>
   );
