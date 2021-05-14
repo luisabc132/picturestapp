@@ -1,6 +1,9 @@
 
 import './App.css';
+import BoardList from './components/boardsList/BoardsList';
+import DropDown from './components/dropDown/DropDown';
 import Header from './components/header/Header';
+import PinsList from './components/pinsList/PinsList';
 import UserCard from './components/usercard/UserCard';
 
 function App() {
@@ -199,7 +202,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <DropDown />
       <UserCard name = {user.firstName + user.lastName}  userName = {user.username} folow = {user.following.length} />
+      <BoardList />
+      <PinsList />
       
     </div>
   );

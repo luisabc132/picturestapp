@@ -15,3 +15,14 @@
     margin-top: 144px;
     
 }
+
+.arrowContainer:hover .dropDownContainer{
+    display: block;
+}
+.imgProfile:hover .dropDownContainer{
+    display: block;
+
+}
+    
+    
+    

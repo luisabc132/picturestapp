@@ -1,0 +1,17 @@
+.pinsContainer{
+    margin-top: 0px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 96px;
+    flex-wrap:wrap;
+}
+.titlePins{
+    margin-top: 38px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-left: 96px;
+}
