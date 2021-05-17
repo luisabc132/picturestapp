@@ -1,4 +1,5 @@
 import Button from '../button/Buttom'
+import DropDown from '../dropDown/DropDown'
 import Logo from '../logo/Logo'
 import UserMenu from '../userMenu/UserMenu'
 import './header.css'
@@ -7,10 +8,11 @@ function Header(){
         <div className="headerContainer">
             <div className="headerFirt">
                 <Logo />
-                <Button text = "Hola"/>
+                <Button text = "Home"/>
             </div>    
             <div className="headerSecond">
                 <UserMenu />
+              
             </div>
             
         </div>

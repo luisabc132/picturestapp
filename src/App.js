@@ -275,7 +275,47 @@ function App() {
     "numberOfLikes": 512,
     "description": "",
     "urlLink": ""
-    }
+    },
+    {
+      "name": "Receta familiar" ,
+      "user": "" , 
+      "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-2.png", 
+      "numberOfLikes": 512,
+      "description": "",
+      "urlLink": ""
+      },
+      {
+      "name": "Puerta inglesa" ,
+      "user": "" , 
+      "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-3.png", 
+      "numberOfLikes": 512,
+      "description": "",
+      "urlLink": ""
+      },
+      {
+      "name": "" ,
+      "user": "" , 
+      "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-4.png", 
+      "numberOfLikes": 512,
+      "description": "",
+      "urlLink": ""
+      },
+      {
+      "name": "Azul" ,
+      "user": "" , 
+      "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-5.png", 
+      "numberOfLikes": 512,
+      "description": "",
+      "urlLink": ""
+      },
+      {
+      "name": "" ,
+      "user": "" , 
+      "imgUrl": "https://riasdegalicia.com/wp-content/uploads/2021/05/image-6.png", 
+      "numberOfLikes": 512,
+      "description": "",
+      "urlLink": ""
+      }
     
   ];
   const user=users[0];
@@ -283,7 +323,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <DropDown />
       <UserCard name = {user.firstName + user.lastName}  userName = {user.username} folow = {user.following.length} />
       <BoardList boards={boards}/>
       <PinsList pins = {pins}/>
