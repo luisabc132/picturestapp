@@ -2,7 +2,7 @@ import './pin.css';
 function Pin({pin}){
     return(
         <div className="pinContainer">
-            <img className="imagePin" src={pin.imgUrl}/>
+            <img className="imagePin" alt="" src={pin.imgUrl}/>
 
            
             <div className="titlePinContainer"> 

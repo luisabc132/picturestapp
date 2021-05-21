@@ -8,15 +8,14 @@ import DropDown from '../dropDown/DropDown';
 function UserMenu(){
     const[showMenu, setShowMenu]  = useState(false);
     function Setea(){
-        console.log('entre a evaluar');
-        //setShowMenu? setShowMenu(false):showMenu(true);   
+       
         if (setShowMenu()){
-            console.log('damelo todo');
-            setShowMenu(false);
+            
+            setShowMenu(!showMenu);
         }   
         else{
-            console.log('ok doki');
-            setShowMenu(true);
+            
+            setShowMenu(!showMenu);
         }
         
     }
@@ -31,7 +30,7 @@ function UserMenu(){
             <div className="optionUser">
             <DropDown  />
             </div>
-        ): console.log('nada por aqui')
+        ): undefined
         }
         </div>
     )

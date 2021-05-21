@@ -1,5 +1,4 @@
 import Button from '../button/Buttom'
-import DropDown from '../dropDown/DropDown'
 import Logo from '../logo/Logo'
 import UserMenu from '../userMenu/UserMenu'
 import './header.css'
