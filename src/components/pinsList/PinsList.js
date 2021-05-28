@@ -2,19 +2,12 @@ import Pin from "../pin/Pin"
 import './pinsList.css'
 import {useEffect, useState} from 'react';
 
-
-
-
-
-
-
-
-
 const PinsList = ({pins}) => {
     const url ='http://localhost:5000/pins';
     const [pines, setPines] = useState(undefined)
     const [pinName, setPinName] = useState();
     const [refresh, setRefresh] = useState(1);
+    const [pinUser, setPinUser] = useState();
     
     useEffect(() => {
         fetch(url)
@@ -39,8 +32,10 @@ const PinsList = ({pins}) => {
     }, []);
     const body = {
         name: pinName,
+        user: pinUser,
       }
-    const createPin= () => {
+    const createPin= (event) => {
+        event.preventDefault()
         fetch("http://localhost:5000/pins", {
             method: 'POST',
             headers: {'Content-Type': 'application/json'
@@ -65,6 +60,7 @@ const PinsList = ({pins}) => {
             </div>
             <form>
         <input onChange={(event) => setPinName(event.target.value)}></input>
+        <input onChange={(event) => setPinUser(event.target.value)}></input>
         <button onClick={() => createPin()}>Create</button>
         </form>
         </div>
